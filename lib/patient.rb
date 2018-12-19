@@ -21,7 +21,7 @@ class Patient
     appointments = Appointment.all 
     
     appointments.collect do |p|
-      appointments.p == self
+      p.patient == self
     end
   end
   
